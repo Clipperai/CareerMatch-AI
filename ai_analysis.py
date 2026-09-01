@@ -1,12 +1,6 @@
-import os
 from groq import Groq
-from dotenv import load_dotenv
 
-# GRABBING API KEY FROM .env FILE
-
-load_dotenv()
-
-GROQ_API_KEY = os.getenv("GROQ_API_KEY")
+GROQ_API_KEY = st.secrets("GROQ_API_KEY")
 
 # GROQ FUNCTIONALITY
 
